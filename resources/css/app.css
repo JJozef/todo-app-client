@@ -1,0 +1,398 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    body,
+    html {
+        font-family: "Poppins", sans-serif !important;
+        background: var(--gray-800);
+    }
+}
+:root {
+    --gray-800: #f0f1f7;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff !important;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #444 !important;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #374151 !important;
+}
+.nav-header {
+    min-height: calc(100vh - 80px);
+}
+.bg-checkbox {
+    background-color: rgb(34, 211, 238) !important;
+}
+.bg-c-span {
+    background-size: 100% 2px !important;
+}
+.task-span-title {
+    background-image: linear-gradient(currentcolor, currentcolor);
+    background-position: 0px 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease 0s;
+}
+.container-task:hover > .task-icon {
+    color: rgb(34 211 238) !important;
+    filter: drop-shadow(rgba(34, 211, 238, 0.5) 0px 0px 8px) !important;
+}
+.task-count-color {
+    color: rgb(34 211 238) !important;
+    filter: drop-shadow(#22d3ee99 0px 0px 8px) !important;
+}
+.bg-white-i {
+    background: #fff !important;
+}
+.navheaderactive {
+    display: block !important;
+}
+.grid-cols-p {
+    grid-column: 1 / span 2;
+}
+.grid-rows-section {
+    grid-template-rows: auto 1fr auto;
+}
+.grid-cols-article {
+    grid-template-columns: 17px 1fr 0fr 20px;
+}
+.grid-cols-article-app {
+    grid-template-columns: 0px 1fr 0fr 0px;
+}
+.grid-cols-article-app-task {
+    grid-template-columns: 16px 1fr 0fr 0px;
+}
+.grid-cols-boxtask {
+    grid-template-columns: 18px auto;
+}
+.grid-cols-form-inputs {
+    grid-template-columns: repeat(2, 1fr);
+}
+.col-fourfive {
+    grid-column: 4 / 5;
+}
+.grid-cols-article-app-task:hover .task-icon-app {
+    color: rgb(34 211 238) !important;
+    filter: drop-shadow(rgba(34, 211, 238, 0.5) 0px 0px 8px) !important;
+}
+#task-input::placeholder {
+    background-image: url("/images/enter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-x: 205px;
+}
+.darkmode--activated .box-select-state {
+    background: #16181d !important;
+}
+.darkmode--activated .box-select-state svg {
+    color: #fff;
+    fill: #fff !important;
+}
+.darkmode--activated .select-states {
+    background: #16181d !important;
+    color: #fff !important;
+}
+.darkmode--activated .label-component {
+    color: #fff !important;
+}
+.darkmode--activated .input-write-new-task {
+    color: #fff !important;
+}
+.darkmode--activated .icon-task-app-active {
+    background: #16181d !important;
+}
+.darkmode--activated .grid-cols-article-app {
+    background: #2d303b !important;
+}
+.darkmode--activated .input-write-new-task {
+    background: #2d303b !important;
+}
+.darkmode--activated .grid-cols-article-app-active > .input-write-new-task {
+    background: #2d303b !important;
+}
+.darkmode--activated .category-span {
+    background: #22242cd0 !important;
+}
+.darkmode--activated .category-span:hover {
+    background: #2d303b !important;
+}
+.darkmode--activated .context-menu-category {
+    background: #16181d !important;
+    color: #fff !important;
+    border-color: #374151;
+}
+.darkmode--activated .context-menu-category a {
+    background: #2d303b85 !important;
+}
+.darkmode--activated .context-menu-category a:hover {
+    background: #2d303b !important;
+}
+.darkmode--activated .card-action-section {
+    background: #16181d !important;
+}
+.darkmode--activated .card-action-section-text {
+    color: #fff !important;
+}
+.darkmode--activated .card-action-section-text-secondary {
+    @apply text-gray-400;
+}
+.darkmode--activated .card-action-section-text-green {
+    @apply text-green-600;
+}
+.darkmode--activated .card-form-section {
+    background: #16181d !important;
+    color: #fff !important;
+}
+.darkmode--activated .card-form-section h1,
+.darkmode--activated .card-form-section h2,
+.darkmode--activated .card-form-section h3,
+.darkmode--activated .card-form-section p,
+.darkmode--activated .card-form-section label {
+    color: #fff !important;
+}
+.darkmode--activated .card-form-section input {
+    color: #fff !important;
+}
+.darkmode--activated .card-form-section-text {
+    color: #fff !important;
+}
+.darkmode--activated .card-form-section-text-secondary {
+    @apply text-gray-400;
+}
+.darkmode--activated .card-form-section-text-green {
+    @apply text-green-600;
+}
+.darkmode--activated .bg-hover-links {
+    background: transparent !important;
+}
+.darkmode--activated .bg-hover-links:hover {
+    background: #2d303b69 !important;
+    @apply text-cyan-400;
+}
+.darkmode--activated .bg-hover-links:focus {
+    background: #2d303b69 !important;
+    @apply text-cyan-400;
+}
+.darkmode--activated .swal2-modal {
+    background: #16181d !important;
+}
+.darkmode--activated .swal2-html-container {
+    color: #ccc !important;
+}
+.grid-cols-article-app-active {
+    grid-template-columns: 21px 1fr 0fr 0px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    @apply bg-white;
+}
+.task-icon-app-select {
+    transform: translateX(0px) !important;
+}
+.darkmode--activated {
+    background: #22242c !important;
+}
+.darkmode--activated .darkmode-ignore2 {
+    color: #000 !important;
+}
+.darkmode--activated .container-task-animation {
+    background: #2d303b !important;
+}
+.darkmode--activated .checkbox-icon {
+    background-color: #16181d;
+}
+.darkmode--activated .darkmode-ignore-h1 {
+    --tw-gradient-from: #22d3ee !important;
+    --tw-gradient-to: rgb(34 211 139 / 0.5) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+    color: transparent !important;
+}
+.darkmode--activated .darkmode-ignore-color,
+.darkmode-ignore-color span,
+.darkmode-ignore-color svg {
+    color: #000 !important;
+    fill: #000 !important;
+}
+.darkmode--activated h1,
+.darkmode--activated h2,
+.darkmode--activated h3,
+.darkmode--activated h4,
+.darkmode--activated h5,
+.darkmode--activated h6,
+.darkmode--activated a,
+.darkmode--activated span {
+    color: #fff;
+}
+.darkmode--activated .links-span-animation p {
+    color: #fff;
+}
+.darkmode--activated .links-span-animation span,
+.darkmode--activated .links-span-animation a {
+    background-color: #16181d !important;
+}
+.darkmode--activated .bg-white-i {
+    background-color: #16181d !important;
+    border-color: rgb(240 241 247 / 5%) !important;
+    box-shadow: rgb(240 241 247 / 5%) 0px 0px 0px 1px !important;
+    color: #fff !important;
+}
+.darkmode--activated .btn-menu {
+    color: #fff !important;
+    fill: #fff !important;
+}
+.darkmode--activated footer {
+    background-color: #16181d !important;
+    color: #fff !important;
+}
+.darkmode--activated .box-menu-animation:hover {
+    background-color: #22242cd0 !important;
+}
+.box-menu-animation-active {
+    @apply bg-gray-100;
+}
+.darkmode--activated .box-menu-animation-active {
+    background-color: #22242cd0 !important;
+}
+.darkmode--activated .box-menu-animation-acc {
+    background-color: #22242cd0 !important;
+}
+.darkmode--activated .animation-dropdown {
+    background-color: #16181d !important;
+}
+.darkmode--activated .modal-animation {
+    background-color: #22242c;
+    color: #fff !important;
+}
+.darkmode--activated .header-modal-animation {
+    background-color: #16181d !important;
+    border-color: #f0f1f70d !important;
+}
+.darkmode--activated .icon-modal-close:hover {
+    fill: #b91c1c !important;
+}
+.darkmode--activated .footer-modal-animation {
+    border-color: #16181d !important;
+}
+.darkmode-layer {
+    mix-blend-mode: color-burn !important;
+}
+.darkmode-toggle {
+    background: #22242c !important;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+.darkmode-toggle--white {
+    background-color: #fff !important;
+}
+.container-app {
+    display: flex;
+}
+.container-nav {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2px 0px;
+    grid-template-areas: ".";
+}
+.darkmode--activated .menu-task-app {
+    background-color: #16181d !important;
+}
+.darkmode--activated .header-task-app {
+    background-color: #16181d !important;
+}
+
+.header-task-app-animation-ml {
+    margin-left: 67px !important;
+}
+.menu-task-app-active-menu {
+    left: 9999999999px !important;
+    opacity: 0;
+    visibility: hidden;
+}
+.main-container-app-active-menu {
+    margin-left: 0px !important;
+}
+.select-content-me-options-active {
+    display: block;
+    animation: fadeInSelectme 0.3s forwards;
+}
+@keyframes fadeInSelectme {
+    from {
+        transform: translateY(-20px) scale(0.5);
+    }
+    to {
+        transform: translateY(0px) scale(1);
+    }
+}
+@media screen and (max-width: 451px) {
+    #task-input::placeholder {
+        background-position-x: 150px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 639px) {
+    #task-input::placeholder {
+        background-position-x: 190px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-landing {
+        background: var(--gray-800);
+    }
+    .nav-header {
+        background: var(--gray-800);
+    }
+    .nav-header-landing {
+        height: calc(100vh - 80px);
+        background: var(--gray-800);
+    }
+    .darkmode--activated .nav-header,
+    .darkmode--activated .header-landing {
+        background: #22242c !important;
+    }
+    .darkmode--activated .nav-header-landing {
+        background-color: #22242c !important;
+    }
+    .flex-form-inputs {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem !important;
+    }
+    .menu-task-app {
+        width: 66px;
+        min-width: 66px !important;
+    }
+    .darkmode--activated .box-menu-animation:hover {
+        background-color: transparent !important;
+    }
+    .darkmode--activated .a-menu-animation {
+        background: #22242cd0 !important;
+    }
+    .box-menu-animation button,
+    .box-menu-animation a {
+        transition: 0.3s ease-in-out;
+        border-left: 2px solid transparent;
+    }
+    .box-menu-animation:hover > button,
+    .box-menu-animation:hover > a {
+        background-color: transparent !important;
+        border-color: #000;
+    }
+    .darkmode--activated .box-menu-animation:hover > button,
+    .darkmode--activated .box-menu-animation:hover > a {
+        background-color: transparent !important;
+        border-color: #fff;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px) {
+    .menu-task-app {
+        min-width: 275px;
+    }
+}
