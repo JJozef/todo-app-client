@@ -1,7 +1,5 @@
 <h1 style="text-align:center;">ToDo Application<h1>
 
-<p style="font-size: 1rem;">ToDo Application es una aplicación básica de lista de tareas que incluye categorías para organizar tus tareas diarias. Con esta aplicación, puedes agregar y modificar tus tareas de forma fácil y eficiente.</p>
-
 # Requisitos previos para la instalación
 
 -   PHP versión 8.1 o superior
