@@ -1,6 +1,6 @@
 <h1 style="text-align='center'">ToDo Application<h1>
 
-ToDo Application es una aplicación básica de lista de tareas que incluye categorías para organizar tus tareas diarias. Con esta aplicación, puedes agregar y modificar tus tareas de forma fácil y eficiente.
+-   ToDo Application es una aplicación básica de lista de tareas que incluye categorías para organizar tus tareas diarias. Con esta aplicación, puedes agregar y modificar tus tareas de forma fácil y eficiente.
 
 # Requisitos previos para la instalación
 
